@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import Functional from './components/Functional';
+import Classcomp from './components/Classcomp';
+import Counter from './components/Counter';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Class and Functional Components</h1>
+      <hr/>
+      <h2>Functional Component</h2>
+      <Functional/>
+      <hr/>
+      <h2>Class Component</h2>
+      <Classcomp/>
+      <hr/>
+      <h2>Counter through class component</h2>
+      <Counter/>
     </div>
   );
 }
